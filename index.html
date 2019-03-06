@@ -13,6 +13,9 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
         crossorigin="anonymous">
 
+    <!-- lightbox css -->
+    <link rel="stylesheet" href="css/lightbox.css">
+
     <!-- custom css -->
     <link rel="stylesheet" href="css/style.css">
 
@@ -23,38 +26,49 @@
 
     <section id="home">
         <header>
-            <nav class="navbar navbar-light bg-light secondary-nav">
+            <div class="secondary-nav">
                 <div class="container">
-                    <ul class="contact-details">
-                        <li><a href=""><img class="phone-solid" src="images/phone-solid.svg" alt="">+91 9448003933</a></li>
-                        <li><a href=""><i class="fas fa-envelope"></i>medhasreeolympiadhsk@gmail.com</a></li>
+                    <ul>
+                        <li><i class="fas fa-phone"></i></li>
+                        <li>+91 9448003933</li>
                     </ul>
-                    <ul class="social-media">
-                        <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
-                        <li><a href=""><i class="fab fa-youtube"></i></a></li>
-                        <li><a href=""><i class="fab fa-google-plus-square"></i></a></li>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i></li>
+                        <li>medhasreeolympiad@gmail.com</li>
+                    </ul>
 
+                    <ul>
+                        <li><i class="fab fa-google-plus-g"></i></i></li>
                     </ul>
+
+                    <ul>
+                        <li><i class="fab fa-youtube"></i></li>
+                    </ul>
+                    <ul>
+                        <li><i class="fab fa-facebook-f"></i></li>
+                    </ul>
+
                 </div>
-            </nav>
-            <nav class="navbar navbar-expand-lg navbar-light main-nav">
+            </div>
+            
+            <nav class="navbar navbar-expand-lg navbar-light bg-light primary-nav">
                 <div class="container">
                     <a class="navbar-brand" href="#"><img class="logo" src="images/logo.png" alt=""></a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-                        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                        <div class="navbar-nav ml-auto">
-                            <a class="nav-item nav-link active" href="#Home">Home</a>
-                            <a class="nav-item nav-link" href="#about-us">About Us</a>
-                            <a class="nav-item nav-link" href="#gallery">Gallery</a>
-                            <a class="nav-item nav-link" href="#our-team">Team</a>
-                            <a class="nav-item nav-link" href="#contact-us">Contact</a>
-                        </div>
-                    </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                  <div class="navbar-nav ml-auto">
+                    <a class="nav-item nav-link scroll" href="#home">Home</a>
+                    <a class="nav-item nav-link scroll" href="#about-us">About Us</a>
+                    <a class="nav-item nav-link scroll" href="#gallery">Gallery</a>
+                    <a class="nav-item nav-link scroll" href="#our-team">Our Team</a>
+                    <a class="nav-item nav-link scroll" href="#contact-us">Contact Us</a>
+                  </div>
                 </div>
-            </nav>
+                </div>
+              </nav>
+            
         </header>
 
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="3000">
@@ -240,42 +254,42 @@
             <hr class="heading-hr">
             <div class="row">
 
-                <div class="col-lg-4 col-sm-6">
-                    <img class="gallery-image img-thumbnail" src="images/gallery/1.jpg" alt="">
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <img class="gallery-image img-thumbnail" src="images/gallery/2.jpg" alt="">
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <img class="gallery-image img-thumbnail" src="images/gallery/3.jpg" alt="">
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <img class="gallery-image img-thumbnail" src="images/gallery/4.jpg" alt="">
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <img class="gallery-image img-thumbnail" src="images/gallery/5.jpg" alt="">
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <img class="gallery-image img-thumbnail" src="images/gallery/6.jpg" alt="">
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <img class="gallery-image img-thumbnail" src="images/gallery/7.jpg" alt="">
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <img class="gallery-image img-thumbnail" src="images/gallery/8.jpg" alt="">
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <img class="gallery-image img-thumbnail" src="images/gallery/9.jpg" alt="">
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <img class="gallery-image img-thumbnail" src="images/gallery/10.jpg" alt="">
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <img class="gallery-image img-thumbnail" src="images/gallery/11.jpg" alt="">
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <img class="gallery-image img-thumbnail" src="images/gallery/12.jpg" alt="">
-                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 frame" data-toggle="modal" data-target="#img1">
+                    <a href="images/stock/1.jpg" data-lightbox="mygallery"><img class="img-fluid img-thumbnail" src="images/thumbs/1.jpg" alt=""></a> 
+                 </div>
+                 <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 frame">
+                     <a href="images/stock/2.jpg" data-lightbox="mygallery"><img class="img-fluid img-thumbnail" src="images/thumbs/2.jpg" alt=""></a>
+                 </div>
+                 <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 frame">
+                     <a href="images/stock/3.jpg" data-lightbox="mygallery"><img class="img-fluid img-thumbnail" src="images/thumbs/3.jpg" alt=""></a>
+                 </div>
+                 <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 frame">
+                     <a href="images/stock/4.png" data-lightbox="mygallery"><img class="img-fluid img-thumbnail" src="images/thumbs/4.jpg" alt=""></a>
+                 </div>
+                 <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 frame">
+                     <a href="images/stock/5.jpg" data-lightbox="mygallery"><img class="img-fluid img-thumbnail" src="images/thumbs/5.jpg" alt=""></a>
+                 </div>
+                 <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 frame">
+                     <a href="images/stock/6.jpg" data-lightbox="mygallery"><img class="img-fluid img-thumbnail" src="images/thumbs/6.jpg" alt=""></a>
+                 </div>
+                 <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 frame">
+                     <a href="images/stock/7.jpg" data-lightbox="mygallery"><img class="img-fluid img-thumbnail" src="images/thumbs/7.jpg" alt=""></a>
+                 </div>
+                 <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 frame">
+                     <a href="images/stock/8.jpg" data-lightbox="mygallery"><img class="img-fluid img-thumbnail" src="images/thumbs/8.jpg" alt=""></a>
+                 </div>
+                 <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 frame">
+                     <a href="images/stock/9.png" data-lightbox="mygallery"><img class="img-fluid img-thumbnail" src="images/thumbs/9.jpg" alt=""></a>
+                 </div>
+                 <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 frame">
+                     <a href="images/stock/10.jpg" data-lightbox="mygallery"><img class="img-fluid img-thumbnail" src="images/thumbs/10.jpg" alt=""></a>
+                 </div>
+                 <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 frame">
+                     <a href="images/stock/11.jpg" data-lightbox="mygallery"><img class="img-fluid img-thumbnail" src="images/thumbs/11.jpg" alt=""></a>
+                 </div>
+                 <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 frame">
+                     <a href="images/stock/12.jpg" data-lightbox="mygallery"><img class="img-fluid img-thumbnail" src="images/thumbs/12.jpg" alt=""></a>
+                 </div>
 
             </div>
         </div>
@@ -358,7 +372,7 @@
             <div>
                 <textarea class="form-control" name="" id="" cols="30" rows="10" placeholder="Message(Optional)"></textarea>
             </div>
-            <button class="btn btn-primary">Submit</button>
+            <button class="btn btn-primary form-btn">Submit</button>
         </form>
 
         <div id="map-block">
@@ -376,21 +390,23 @@
             <li><i class="fab fa-google-plus-square fa-2x"></i></li>
         </ul>
     </footer>
-
-
-
-    <!-- Optional JavaScript -->
-
-    <!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAMWh_IWGFtUiIaGrKKohQ0Z0cIfXGF2Ko&callback=initMap"
-        type="text/javascript"></script> -->
-    <script src="js/script.js"></script>
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
+    
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+    
+    <!-- Popper.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
+    
+    <!-- Bootstrap JS -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+    
+    <!-- lightbox script -->
+    <script src="js/lightbox-plus-jquery.js"></script>
+    
+    <!-- custom js -->
+    <script src="js/script.js"></script>
 </body>
 
 </html>
