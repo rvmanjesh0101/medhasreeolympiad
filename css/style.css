@@ -223,6 +223,10 @@ h5 {
     box-shadow: 0 0 15px -5px black;
 }
 
+.message {
+    font-weight: 500;
+}
+
 @media(max-width: 992px) {
     .nav-link {
         margin: 0;
